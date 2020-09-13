@@ -77,7 +77,7 @@ class App extends Component {
     fd.append('file', this.state.selectedFile);
 
     try {
-      const res = await axios.post(apiEndpoint, fd, {timeout: 7500});
+      const res = await axios.post(apiEndpoint, fd, {timeout: 15000});
       this.setState({
         loading: false,
       });
